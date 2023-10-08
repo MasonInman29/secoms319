@@ -2,28 +2,28 @@
     "food": [
         {
             "name" : "Deluxe Hamburger",
-            "desription" : "Fixed with toppings of your choice",
+            "details" : "Fixed with toppings of your choice",
             "price" : "$5.00",
-            "picture" : "./images/burger.jpg"
+            "url" : "./images/burger.jpg"
 
         },
         {
             "name" : "Chicken Tenders",
-            "desription" : "Served with a side of ranch",
+            "details" : "Served with a side of ranch",
             "price" : "$4.50",
-            "picture" : "./images/tendies.jpg"
+            "url" : "./images/tendies.jpg"
         },
         {
             "name" : "Hot Dog",
-            "desription" : "Fixed with toppings of your choice",
+            "details" : "Fixed with toppings of your choice",
             "price" : "$3.50",
-            "picture" : "./images/hotdog.jpg"
+            "url" : "./images/hotdog.jpg"
         },
         {
             "name" : "World's Best French Fries",
-            "desription" : "Low price = more fries!",
+            "details" : "Low price = more fries!",
             "price" : "$1.00",
-            "picture" : "./images/fries.jpg"
+            "url" : "./images/fries.jpg"
 
         }
     ]
