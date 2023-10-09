@@ -1,0 +1,30 @@
+{
+    "drinks": [
+        {
+            "name" : "Glass of Water",
+            "details" : "Just a traditional glass of water with ice",
+            "price" : "$1.25",
+            "url" : "./images/water.jpg"
+
+        },
+        {
+            "name" : "Classic Cola",
+            "details" : "You average cola with a not so average flavor quality",
+            "price" : "$2.25",
+            "url" : "./images/Soda.jpg"
+        },
+        {
+            "name" : "Iced Tea",
+            "details" : "A cool tea beverage with chilled to perfection",
+            "price" : "$2.00",
+            "url" : "./images/icedTea.jpg"
+        },
+        {
+            "name" : "Lemonade",
+            "details" : "A sweet take on lemonade to help you cool down",
+            "price" : "$2.00",
+            "url" : "./images/lemonade.jpg"
+
+        }
+    ]
+}

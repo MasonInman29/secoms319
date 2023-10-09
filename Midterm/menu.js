@@ -3,6 +3,10 @@ fetch("./mjinman_food.json")
 .then(response => response.json())
 .then(myFood => loadFoods(myFood));
 
+// Read the file with drinks :
+fetch("./mjinman_drinks.json")
+.then(response => response.json())
+.then(myDrinks => loadDrinks(myDrinks));
 
 
 // Replace image and text per every one in HTML
@@ -50,23 +54,51 @@ toggleFoodButton.addEventListener('click', function () {
 collapsableCard1.toggle();
 });
 
-// var toggleButton2 = document.getElementById('toggleCardButton2');
-// var card2 = document.getElementById('card2');
-// var collapsableCard2 = new bootstrap.Collapse(card2, {toggle: false});
-// toggleButton2.addEventListener('click', function () {
-// collapsableCard2.toggle();
-// });
 
-// var toggleButton3 = document.getElementById('toggleCardButton3');
-// var card3 = document.getElementById('card3');
-// var collapsableCard3 = new bootstrap.Collapse(card3, {toggle: false});
-// toggleButton3.addEventListener('click', function () {
-// collapsableCard3.toggle();
-// });
 
-// var toggleButton4 = document.getElementById('toggleCardButton4');
-// var card4 = document.getElementById('card4');
-// var collapsableCard4 = new bootstrap.Collapse(card4, {toggle: false});
-// toggleButton4.addEventListener('click', function () {
-// collapsableCard4.toggle();
-// });
+
+
+// Replace image and text per every one in HTML
+function loadDrinks(myDrinks) {
+    var imgDrink1 = document.getElementById("imgDrink1"); // Avengers
+    var imgDrink2 = document.getElementById("imgDrink2"); // The Last Airbender
+    var imgDrink3 = document.getElementById("imgDrink3"); // The Iron Giant
+    var imgDrink4 = document.getElementById("imgDrink4"); // Mulan
+    var txtDrink1 = document.getElementById("txtDrink1"); // Avengers
+    var txtDrink2 = document.getElementById("txtDrink2"); // The Last Airbender
+    var txtDrink3 = document.getElementById("txtDrink3"); // The Iron Giant
+    var txtDrink4 = document.getElementById("txtDrink4"); // Mulan
+
+    for (var i = 0; i< myDrinks.drinks.length; i++){
+        let name = myDrinks.drinks[i].name;
+        let price = myDrinks.drinks[i].price;
+        let url = myDrinks.drinks[i].url;
+        let details = myDrinks.drinks[i].details;
+        let imgDrink = document.createElement("div");
+        imgDrink.innerHTML = `<img src=${url} class="card-img-top" alt="..."></img>`;
+        let txtDrink = document.createElement("p");
+        txtDrink.innerHTML = `<p class="card-text"> <strong>${name}</strong> <br> ${details} <br> <small class="text-body-secondary"> ${price} </small></p>`;
+        if (myDrinks.drinks[i].name === "Glass of Water") {
+            imgDrink1.appendChild(imgDrink);
+            txtDrink1.appendChild(txtDrink);
+            } else if (myDrinks.drinks[i].name === "Classic Cola") {
+            imgDrink2.appendChild(imgDrink);
+            txtDrink2.appendChild(txtDrink);
+            } else if (myDrinks.drinks[i].name === "Iced Tea") {
+            imgDrink3.appendChild(imgDrink);
+            txtDrink3.appendChild(txtDrink);
+            } else if (myDrinks.drinks[i].name === "Lemonade") {
+            imgDrink4.appendChild(imgDrink);
+            txtDrink4.appendChild(txtDrink);
+            }
+     } // end of for
+} // end of function
+
+// Toggle Avengers button :
+var toggleDrinksButton = document.getElementById('toggleDrinksButton');
+var drinkCard = document.getElementById('drinks');
+var collapsableDrinksCard = new bootstrap.Collapse(drinkCard, {toggle: false});
+toggleDrinksButton.addEventListener('click', function () {
+    console.log('Button clicked');
+collapsableDrinksCard.toggle();
+});

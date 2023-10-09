@@ -112,3 +112,14 @@ body {
   .bd-mode-toggle {
     z-index: 1500;
   }
+  .button-color {
+    background-color: #ff7070; /* Replace 'your-color-here' with your desired color */
+    color:#fff;
+  }
+  
+  .button-color:hover{
+    background-color: #fb3939;
+  }
+  .button-color:active{
+    background-color: #ffffff9f;
+  }
