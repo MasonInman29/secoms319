@@ -1,6 +1,7 @@
 {
     "menuItems": [
         {
+            "id":1,
             "type" : "drink",
             "name" : "Glass of Water",
             "details" : "Just a traditional glass of water with ice",
@@ -9,20 +10,23 @@
 
         },
         {
+            "id": 2,
             "type" : "drink",
             "name" : "Classic Cola",
-            "details" : "You average cola with a not so average flavor quality",
+            "details" : "Your average cola with a not so average flavor quality",
             "price" : "$2.25",
             "url" : "./images/Soda.jpg"
         },
         {
+            "id": 3,
             "type" : "drink",
             "name" : "Iced Tea",
-            "details" : "A cool tea beverage with chilled to perfection",
+            "details" : "A cool tea beverage chilled to perfection",
             "price" : "$2.00",
             "url" : "./images/icedTea.jpg"
         },
         {
+            "id":4,
             "type" : "drink",
             "name" : "Lemonade",
             "details" : "A sweet take on lemonade to help you cool down",
@@ -32,6 +36,7 @@
         },
 
         {
+            "id": 5,
             "type" : "food",
             "name" : "Deluxe Hamburger",
             "details" : "Fixed with toppings of your choice",
@@ -40,6 +45,7 @@
 
         },
         {
+            "id": 6,
             "type" : "food",
             "name" : "Chicken Tenders",
             "details" : "Served with a side of ranch",
@@ -47,6 +53,7 @@
             "url" : "./images/tendies.jpg"
         },
         {
+            "id": 7,
             "type" : "food",
             "name" : "Hot Dog",
             "details" : "Fixed with toppings of your choice",
@@ -54,6 +61,7 @@
             "url" : "./images/hotdog.jpg"
         },
         {
+            "id": 8,
             "type" : "food",
             "name" : "World's Best French Fries",
             "details" : "Low price = more fries!",
