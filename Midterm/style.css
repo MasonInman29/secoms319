@@ -27,6 +27,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
     }
     img {
     max-width: 100%;
@@ -124,3 +125,9 @@ body {
   .button-color:active{
     background-color: #ffffff9f;
   }
+
+#my_form{
+  text-size-adjust: 100vh;
+
+}
+

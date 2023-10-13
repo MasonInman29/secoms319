@@ -9,13 +9,13 @@
         },
         {
             "name" : "Classic Cola",
-            "details" : "You average cola with a not so average flavor quality",
+            "details" : "Your average cola with a not so average flavor quality",
             "price" : "$2.25",
             "url" : "./images/Soda.jpg"
         },
         {
             "name" : "Iced Tea",
-            "details" : "A cool tea beverage with chilled to perfection",
+            "details" : "A cool tea beverage chilled to perfection",
             "price" : "$2.00",
             "url" : "./images/icedTea.jpg"
         },
