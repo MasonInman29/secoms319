@@ -6,7 +6,7 @@ function getInputValue() {
     let itemName = document.forms["my_form"]["inputItemName"];
     let inputItemName = itemName.value;
     //console.log("inputMovieName.value");
-    fetch("./nclarke_fullMenu.json")
+    fetch("./data.json")
         .then(response => response.json())
         .then(myFood => loadMenu(myFood));
     function loadMenu(menu) {
